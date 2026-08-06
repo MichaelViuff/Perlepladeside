@@ -1,12 +1,11 @@
 const beadArt = [
-  { id: "regnbue", title: "Regnbue", image: "images/regnbue.svg" },
-  { id: "raket", title: "Raket", image: "images/raket.svg" },
-  { id: "blomst", title: "Blomst", image: "images/blomst.svg" },
-  { id: "hjerte", title: "Hjerte", image: "images/hjerte.svg" },
-  { id: "sol", title: "Solskin", image: "images/sol.svg" },
-  { id: "robot", title: "Robot", image: "images/robot.svg" },
-  { id: "sommerfugl", title: "Sommerfugl", image: "images/sommerfugl.svg" },
-  { id: "spilfigur", title: "Spilfigur", image: "images/spilfigur.svg" },
+  { id: "furnace", title: "Furnace", image: "images/furnace.jpg" },
+  { id: "green_circuit", title: "Green Circuit", image: "images/green circuit.jpg" },
+  { id: "green_science_pack", title: "Green Science Peak", image: "images/green science pack.jpg" },
+  { id: "lab", title: "Lab", image: "images/lab.jpg" },
+  { id: "transport", title: "Transport", image: "images/transport.jpg" },
+  { id: "red_science_pack", title: "Red Science Pack", image: "images/red science pack.jpg" },
+  { id: "long_inserter", title: "Long Inserter", image: "images/long inserter.jpg" },
 ];
 
 const STORAGE_KEY = "perlegalleriet-favorites";

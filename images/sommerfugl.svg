@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" role="img" aria-labelledby="title">
-  <title id="title">En enkel sommerfugl</title>
-  <rect width="320" height="320" fill="#e9dfc8"/>
-  <path d="M147 149C107 56 30 66 59 159c12 38 50 50 88 24" fill="#ef7f73" stroke="#292927" stroke-width="7"/>
-  <path d="M173 149c40-93 117-83 88 10-12 38-50 50-88 24" fill="#f5c84c" stroke="#292927" stroke-width="7"/>
-  <path d="M146 172c-73-15-90 53-29 75 31 11 42-20 43-42M174 172c73-15 90 53 29 75-31 11-42-20-43-42" fill="#78c6b5" stroke="#292927" stroke-width="7"/>
-  <ellipse cx="160" cy="175" rx="17" ry="70" fill="#292927"/>
-  <path d="M155 109c-7-20-21-29-34-30M165 109c7-20 21-29 34-30" fill="none" stroke="#292927" stroke-width="5" stroke-linecap="round"/>
-</svg>

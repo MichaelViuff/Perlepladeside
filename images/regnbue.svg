@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" role="img" aria-labelledby="title">
-  <title id="title">En enkel regnbue</title>
-  <rect width="320" height="320" fill="#f5e8d0"/>
-  <path d="M64 220a96 96 0 0 1 192 0" fill="none" stroke="#ed5c4d" stroke-width="34" stroke-linecap="round"/>
-  <path d="M96 220a64 64 0 0 1 128 0" fill="none" stroke="#f5c84c" stroke-width="30" stroke-linecap="round"/>
-  <path d="M126 220a34 34 0 0 1 68 0" fill="none" stroke="#63b5a6" stroke-width="26" stroke-linecap="round"/>
-  <g fill="#fff"><circle cx="57" cy="224" r="24"/><circle cx="81" cy="216" r="29"/><circle cx="239" cy="216" r="29"/><circle cx="263" cy="224" r="24"/></g>
-</svg>
