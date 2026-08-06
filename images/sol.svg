@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" role="img" aria-labelledby="title">
+  <title id="title">En enkel sol</title>
+  <rect width="320" height="320" fill="#a8d7e7"/>
+  <g stroke="#292927" stroke-width="9" stroke-linecap="round">
+    <path d="M160 33v35M160 252v35M33 160h35M252 160h35M70 70l25 25M225 225l25 25M250 70l-25 25M95 225l-25 25"/>
+  </g>
+  <circle cx="160" cy="160" r="72" fill="#f5c84c" stroke="#292927" stroke-width="8"/>
+  <circle cx="135" cy="145" r="7" fill="#292927"/><circle cx="185" cy="145" r="7" fill="#292927"/>
+  <path d="M131 180c18 18 40 18 58 0" fill="none" stroke="#292927" stroke-width="7" stroke-linecap="round"/>
+</svg>

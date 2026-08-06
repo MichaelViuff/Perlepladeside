@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" role="img" aria-labelledby="title">
+  <title id="title">En enkel raket</title>
+  <rect width="320" height="320" fill="#c9e6e1"/>
+  <g transform="rotate(28 160 160)">
+    <path d="M160 52c43 39 50 98 21 150h-42c-29-52-22-111 21-150Z" fill="#faf7ef" stroke="#292927" stroke-width="7"/>
+    <circle cx="160" cy="120" r="22" fill="#6db8d6" stroke="#292927" stroke-width="7"/>
+    <path d="m139 184-35 30 39 3m38-33 35 30-39 3" fill="#ef5b4c" stroke="#292927" stroke-width="7" stroke-linejoin="round"/>
+    <path d="m145 202 15 66 15-66" fill="#f5c84c" stroke="#292927" stroke-width="7" stroke-linejoin="round"/>
+  </g>
+  <g fill="#fff"><circle cx="51" cy="58" r="5"/><circle cx="252" cy="69" r="7"/><circle cx="269" cy="190" r="4"/><circle cx="67" cy="247" r="7"/></g>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" role="img" aria-labelledby="title">
+  <title id="title">En enkel robot</title>
+  <rect width="320" height="320" fill="#dcd8e8"/>
+  <path d="M160 49v33" stroke="#292927" stroke-width="8"/><circle cx="160" cy="43" r="12" fill="#ef5b4c" stroke="#292927" stroke-width="6"/>
+  <rect x="74" y="82" width="172" height="151" rx="22" fill="#f6f1e8" stroke="#292927" stroke-width="8"/>
+  <rect x="98" y="109" width="124" height="62" rx="10" fill="#78c6b5" stroke="#292927" stroke-width="7"/>
+  <circle cx="128" cy="140" r="10" fill="#292927"/><circle cx="192" cy="140" r="10" fill="#292927"/>
+  <path d="M126 198h68" stroke="#292927" stroke-width="8" stroke-linecap="round"/>
+  <path d="M74 124H48v76h26M246 124h26v76h-26M116 233v40M204 233v40" fill="none" stroke="#292927" stroke-width="10" stroke-linejoin="round"/>
+</svg>

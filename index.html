@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Et lille galleri med farverige perleplader og personlige favoritter."
+    />
+    <title>Perlegalleriet</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Gå til toppen af Perlegalleriet">
+        <span class="brand-mark" aria-hidden="true">●</span>
+        <span>Perlegalleriet</span>
+      </a>
+
+      <nav class="view-switcher" aria-label="Vælg gallerivisning">
+        <button class="view-button is-active" type="button" data-view="all" aria-pressed="true">
+          Alle
+        </button>
+        <button class="view-button" type="button" data-view="favorites" aria-pressed="false">
+          Favoritter
+          <span class="favorite-count" aria-label="0 favoritter">0</span>
+        </button>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="page-title">
+        <p class="eyebrow">Askes samling</p>
+        <h1 id="page-title">Små perler.<br />Store idéer.</h1>
+        <p class="hero-copy">
+          Gå på opdagelse i samlingen, og tryk på hjertet for at gemme dine favoritter.
+        </p>
+      </section>
+
+      <section class="gallery-section" aria-labelledby="gallery-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow" id="gallery-kicker">Hele samlingen</p>
+            <h2 id="gallery-title">Perleplader</h2>
+          </div>
+          <p class="result-count" aria-live="polite"></p>
+        </div>
+
+        <div class="gallery" id="gallery"></div>
+
+        <div class="empty-state" id="empty-state" hidden>
+          <span class="empty-heart" aria-hidden="true">♡</span>
+          <h3>Ingen favoritter endnu</h3>
+          <p>Tryk på et hjerte i galleriet, så dukker motivet op her.</p>
+          <button class="primary-button" type="button" data-show-all>Se alle perleplader</button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Perlegalleriet · Lavet med HTML, CSS og JavaScript</p>
+    </footer>
+
+    <dialog class="image-dialog" id="image-dialog" aria-labelledby="dialog-title">
+      <div class="dialog-content">
+        <button class="close-button" type="button" aria-label="Luk stor billedvisning">×</button>
+        <div class="dialog-image-wrap">
+          <img id="dialog-image" src="" alt="" />
+        </div>
+        <div class="dialog-details">
+          <div>
+            <p class="eyebrow">Perleplade</p>
+            <h2 id="dialog-title"></h2>
+          </div>
+          <button class="dialog-favorite-button" type="button">
+            <span class="heart-icon" aria-hidden="true">♡</span>
+            <span class="favorite-label">Gem som favorit</span>
+          </button>
+        </div>
+      </div>
+    </dialog>
+
+    <template id="gallery-card-template">
+      <article class="gallery-card">
+        <button class="image-button" type="button">
+          <img src="" alt="" loading="lazy" />
+        </button>
+        <div class="card-details">
+          <h3></h3>
+          <button class="favorite-button" type="button">
+            <span aria-hidden="true">♡</span>
+            <span class="visually-hidden"></span>
+          </button>
+        </div>
+      </article>
+    </template>
+  </body>
+</html>
