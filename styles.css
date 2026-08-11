@@ -182,6 +182,66 @@ h1 {
   margin-bottom: 2rem;
 }
 
+.section-heading-actions {
+  position: relative;
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-end;
+  gap: 0.8rem;
+}
+
+.favorite-transfer-actions {
+  display: flex;
+  align-items: baseline;
+  gap: 0.8rem;
+  padding-right: 0.8rem;
+  border-right: 1px solid var(--line);
+}
+
+.favorite-transfer-actions[hidden],
+.favorite-transfer-status[hidden] {
+  display: none;
+}
+
+.favorite-transfer-button {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.favorite-transfer-button:hover {
+  color: var(--ink);
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.favorite-transfer-status {
+  position: absolute;
+  top: calc(100% + 0.65rem);
+  right: 0;
+  width: max-content;
+  max-width: min(22rem, calc(100vw - 2.5rem));
+  padding: 0.65rem 0.85rem;
+  border: 1px solid #b7d4c5;
+  border-radius: 0.6rem;
+  margin: 0;
+  background: #eff9f3;
+  box-shadow: var(--shadow);
+  color: #245c3d;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.favorite-transfer-status.is-error {
+  border-color: #efb8b2;
+  background: #fff1ef;
+  color: var(--accent-dark);
+}
+
 .section-heading h2,
 .dialog-details h2 {
   margin: 0;
@@ -238,12 +298,22 @@ h1 {
   padding: 0.9rem 0.15rem 0;
 }
 
+.card-copy {
+  min-width: 0;
+}
+
 .card-details h3 {
   overflow: hidden;
   margin: 0;
   font-size: 1rem;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.art-author {
+  margin: 0.3rem 0 0;
+  color: var(--muted);
+  font-size: 0.85rem;
 }
 
 .favorite-button {
@@ -334,6 +404,7 @@ footer {
 }
 
 .dialog-image-wrap {
+  position: relative;
   display: grid;
   min-width: 0;
   padding: clamp(1rem, 3vw, 2rem);
@@ -346,6 +417,43 @@ footer {
   width: 100%;
   max-height: calc(100dvh - 6rem);
   object-fit: contain;
+}
+
+.dialog-nav-button {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  display: grid;
+  width: 3rem;
+  height: 3rem;
+  padding: 0;
+  border: 1px solid rgb(20 19 18 / 12%);
+  border-radius: 50%;
+  background: rgb(255 255 255 / 92%);
+  box-shadow: 0 0.25rem 1rem rgb(20 19 18 / 14%);
+  cursor: pointer;
+  font-size: 1.5rem;
+  line-height: 1;
+  place-items: center;
+  transform: translateY(-50%);
+}
+
+.dialog-nav-button:hover:not(:disabled) {
+  background: white;
+  transform: translateY(-50%) scale(1.06);
+}
+
+.dialog-nav-button:disabled {
+  cursor: default;
+  opacity: 0.35;
+}
+
+.dialog-previous-button {
+  left: clamp(0.5rem, 2vw, 1.25rem);
+}
+
+.dialog-next-button {
+  right: clamp(0.5rem, 2vw, 1.25rem);
 }
 
 .dialog-details {
@@ -455,6 +563,16 @@ footer {
     align-items: start;
     flex-direction: column;
     gap: 0.7rem;
+  }
+
+  .section-heading-actions {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .favorite-transfer-status {
+    right: auto;
+    left: 0;
   }
 
   .dialog-details {

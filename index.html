@@ -44,7 +44,24 @@
             <p class="eyebrow" id="gallery-kicker">Hele samlingen</p>
             <h2 id="gallery-title">Perleplader</h2>
           </div>
-          <p class="result-count" aria-live="polite"></p>
+          <div class="section-heading-actions">
+            <div class="favorite-transfer-actions" hidden>
+              <button class="favorite-transfer-button" type="button" data-export-favorites>
+                Eksportér
+              </button>
+              <button class="favorite-transfer-button" type="button" data-import-favorites>
+                Importér
+              </button>
+              <input
+                id="favorite-import-input"
+                class="visually-hidden"
+                type="file"
+                accept="application/json,.json"
+              />
+            </div>
+            <p class="result-count" aria-live="polite"></p>
+            <p class="favorite-transfer-status" role="status" aria-live="polite" hidden></p>
+          </div>
         </div>
 
         <div class="gallery" id="gallery"></div>
@@ -66,12 +83,27 @@
       <div class="dialog-content">
         <button class="close-button" type="button" aria-label="Luk stor billedvisning">×</button>
         <div class="dialog-image-wrap">
+          <button
+            class="dialog-nav-button dialog-previous-button"
+            type="button"
+            aria-label="Vis forrige perleplade"
+          >
+            <span aria-hidden="true">←</span>
+          </button>
           <img id="dialog-image" src="" alt="" />
+          <button
+            class="dialog-nav-button dialog-next-button"
+            type="button"
+            aria-label="Vis næste perleplade"
+          >
+            <span aria-hidden="true">→</span>
+          </button>
         </div>
         <div class="dialog-details">
           <div>
             <p class="eyebrow">Perleplade</p>
             <h2 id="dialog-title"></h2>
+            <p class="art-author" id="dialog-author"></p>
           </div>
           <button class="dialog-favorite-button" type="button">
             <span class="heart-icon" aria-hidden="true">♡</span>
@@ -87,7 +119,10 @@
           <img src="" alt="" loading="lazy" />
         </button>
         <div class="card-details">
-          <h3></h3>
+          <div class="card-copy">
+            <h3></h3>
+            <p class="art-author"></p>
+          </div>
           <button class="favorite-button" type="button">
             <span aria-hidden="true">♡</span>
             <span class="visually-hidden"></span>
